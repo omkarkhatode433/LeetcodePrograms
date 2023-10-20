@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class LongestSubStringWithoutRepetingCharacter{
     public static void main(String[] args) {
+        Solution s=new Solution();
+        System.out.println(s.lengthOfLongestSubstring("abcabcds"));
         
     }
     
