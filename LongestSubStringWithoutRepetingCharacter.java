@@ -10,6 +10,7 @@ public class LongestSubStringWithoutRepetingCharacter{
 }
 class Solution {
    
+    
     int m=0;
     public int lengthOfLongestSubstring(String s) {
         ArrayList<Integer> arr=new ArrayList<>();
