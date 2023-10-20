@@ -4,15 +4,16 @@ public class AddTwoNumbers {
     }
     
 }
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
+
+// * Definition for singly-linked list.
+ class ListNode {
+      int val;
+      ListNode next;
+      ListNode() {}
+      ListNode(int val) { this.val = val; }
+      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ }
+  /*
  long f=0,s=0,c=1,z=1;
        long i=l1.val;
        boolean st=true;
