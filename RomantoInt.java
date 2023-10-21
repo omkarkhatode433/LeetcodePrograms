@@ -1,0 +1,75 @@
+class Solution {
+    public int romanToInt(String s) {
+        int num=0;
+        StringBuilder sb=new StringBuilder();
+        sb.append(s);
+        while(sb.length()>0){
+            if(sb.indexOf("IX")>=0){
+                num=num+9;
+                sb.delete(sb.indexOf("IX"),sb.indexOf("IX")+2);
+                System.out.println(sb.toString());
+            }
+            if(sb.indexOf("IV")>=0){
+                  num=num+4;
+                sb.delete(sb.indexOf("IV"),sb.indexOf("IV")+2);
+                System.out.println(sb.toString());
+            }
+            if(sb.indexOf("XL")>=0){
+                  num=num+40;
+                sb.delete(sb.indexOf("XL"),sb.indexOf("XL")+2);
+                System.out.println(sb.toString());
+            }
+            if(sb.indexOf("XC")>=0){
+                  num=num+90;
+                sb.delete(sb.indexOf("XC"),sb.indexOf("XC")+2);
+                System.out.println(sb.toString());
+            }
+            if(sb.indexOf("CD")>=0){
+                  num=num+400;
+                sb.delete(sb.indexOf("CD"),sb.indexOf("CD")+2);
+                System.out.println(sb.toString());
+            }
+            if(sb.indexOf("CM")>=0){
+                  num=num+900;
+                sb.delete(sb.indexOf("CM"),sb.indexOf("CM")+2);
+                System.out.println(sb.toString());
+            }
+            if(sb.indexOf("I")>=0){
+                  num=num+1;
+                sb.delete(sb.indexOf("I"),sb.indexOf("I")+1);
+                System.out.println(sb.toString());
+            }
+            if(sb.indexOf("V")>=0){
+                  num=num+5;
+                sb.delete(sb.indexOf("V"),sb.indexOf("V")+1);
+                System.out.println(sb.toString());
+            }
+            if(sb.indexOf("X")>=0){
+                  num=num+10;
+                sb.delete(sb.indexOf("X"),sb.indexOf("X")+1);
+                System.out.println(sb.toString());
+            }
+            if(sb.indexOf("L")>=0){
+                  num=num+50;
+                sb.delete(sb.indexOf("L"),sb.indexOf("L")+1);
+                System.out.println(sb.toString());
+            }
+            if(sb.indexOf("C")>=0){
+                  num=num+100;
+                sb.delete(sb.indexOf("C"),sb.indexOf("C")+1);
+                System.out.println(sb.toString());
+            }
+            if(sb.indexOf("D")>=0){
+                  num=num+500;
+                sb.delete(sb.indexOf("D"),sb.indexOf("D")+1);
+                System.out.println(sb.toString());
+            }
+            if(sb.indexOf("M")>=0){
+                  num=num+1000;
+                sb.delete(sb.indexOf("M"),sb.indexOf("M")+1);
+                System.out.println(sb.toString());
+            }
+        }
+        return num;
+    }
+}
