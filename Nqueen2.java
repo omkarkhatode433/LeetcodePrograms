@@ -7,6 +7,7 @@ class Solution {
     public int totalNQueens(int n) {
         count = 0;
         solveNQueens(n, 0, new int[n]);
+        
         return count;
     }
 
