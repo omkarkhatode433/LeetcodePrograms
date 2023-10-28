@@ -8,6 +8,7 @@ class Solution {
         int[] c=checkOranges(grid);
         for(int i=0;i<al.size();i++){
             ArrayList<Integer> l=al.get(i);
+            
             ArrayList<Integer> l2=new ArrayList<>();
             for(int j:l){
                 ArrayList<Integer> l3=addAdjecent(grid,j/10,j%10);
